@@ -22,6 +22,9 @@ export function startup() {
     		revisor.renameHistory(oldTitle, newTitle);
     	}
 
+        // Add the new title tag, since the title may have changed
+    	newTiddler = new $tw.Tiddler(newTiddler, { "revision-tag": generateTag(newTitle)});
+
     	// If we're overwriting...
     	if (oldTitle != newTitle && $tw.wiki.tiddlerExists(newTitle)) {
     		revisor.addToHistory(newTitle, $tw.wiki.getTiddler(newTitle));
@@ -36,7 +39,6 @@ export function startup() {
     	}
 
     	revisor.addToHistory(newTitle, oldTiddler);
-    	newTiddler = new $tw.Tiddler(newTiddler, { "revision-tag": generateTag(newTitle)});
 
     	return newTiddler; 
 	});
