@@ -7,7 +7,11 @@ A bare-bones TiddlyWiki plugin to provide revision history for saved Tiddlers.
 
 **Quick Install (recommended)**: Visit the [Demo](https://ashlinduncan.github.io/tiddlywiki-revision-history/) and follow the quick-install instructions there.
 
-**Building:** Clone the git repo, go to the src directory, and run `npm install` and then `npm run build-plugin`. Then, import the generated `.tid` file from ./build into your project.
+**Building:**
+* Clone the git repo
+* Run `npm install`
+* Run `npm run build-plugin`.
+* Then, import the generated `.tid` file from ./build into your project, either by drag-and-drop or another import strategy.
 
 ## Usage
 Once a Tiddler has been edited, Revision History will intercept edits and save the old version as system Tiddlers. To view a listing of revisions, click the "Info" button on a Tiddler, and go to the "Revisions" tab.
