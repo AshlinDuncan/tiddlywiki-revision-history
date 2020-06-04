@@ -1,9 +1,0 @@
-title: $:/plugins/ashlin/revision-history/readme
-
-This plugin adds the ability to automatically store and display revision history. It is dependent on a slight modification of the core to add an additional hook in navigator.js.
-
-Every time you edit a tiddler, the plugin will create an internal copy of the previous tiddler. These revisions can be viewed through a new tab in the info panel.
-
-If a tiddler is renamed, all of the previous revisions will be renamed to match. If the rename ends up overwriting an existing tiddler, the histories will be merged.
-
-Currently, there is no limit on how many revisions can exist.
