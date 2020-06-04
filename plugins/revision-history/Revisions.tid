@@ -1,0 +1,8 @@
+\define listlink(caption, title)
+[[$caption$|$title$]]
+\end
+
+<$list filter="[tag{!!revision-tag}sort[revision-date]reverse[]]">
+<$macrocall $name="listlink" caption={{!!revision-caption}} title={{!!title}} />
+<br/>
+</$list>

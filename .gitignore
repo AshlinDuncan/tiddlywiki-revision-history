@@ -1,3 +1,9 @@
+# Babel build files
+plugins/revision-history/lib/
+
+# Output build dir
+build/
+
 # Logs
 logs
 *.log
